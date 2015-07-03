@@ -10,11 +10,11 @@ using namespace std;
 int main()
 {
 	ifstream inf ("input.in");
-	int numar, coord, coordExacte = 10;
+	int numar, coord, coordExacte = 1;
 	inf >> numar;
 	inf >> coord;
 	
-	for (int i = 1;i < coord;i++)
+	for (int i = 0;i < coord;i++)
 	{
 		coordExacte = coordExacte * 10;
 	}
