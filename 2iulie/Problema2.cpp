@@ -24,5 +24,5 @@ int main()
 
 	int numarFinal = numarFinalOne * coordExacte + numarFinalTwo;
 	cout << numarFinal;
-	}
+}
 	
