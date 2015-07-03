@@ -16,7 +16,7 @@ int main()
 	
 	for (int i = 0;i < coord;i++)
 	{
-		coordExacte = coordExacte * 10;
+		coordExacte *= 10;
 	}
 	
 	int numarFinalOne = numar / (coordExacte * 10);
