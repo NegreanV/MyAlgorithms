@@ -1,4 +1,4 @@
-//Se cere sa se determine ultima cifra a puterii a**2+b, valorile variabilelor a si b se citesc de la 
+//Se cere sa se determine ultima cifra a puterii 2**a+b, valorile variabilelor a si b se citesc de la 
 //tastatura (numere naturale nenule < 11)
 
 #include <iostream>
