@@ -1,3 +1,7 @@
+//Se dau de la tastatura numele si notele la limba romana si matematica pentru doi elevi
+//Se cere sa se afiseze numele elevilor in ordinea descrescatoare a mediei generale la 
+//cele doua discipline. Daca amandoi elevii au aceeasi medie se va afisa primul, cel 
+//care este alfabetic mai mare.
 #include <iostream>
 #include <fstream>
 
