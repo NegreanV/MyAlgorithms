@@ -57,11 +57,11 @@ int main()
 	}
 	else if (medieA == medieB)
 	{
-		if (ccA > ccB)
+		if (ccA < ccB)
 		{
 			cout << "Ionescu\nPopescu";
 		}
-		else if (ccA < ccB)
+		else if (ccA > ccB)
 		{
 			cout << "Popescu\nIonescu";
 		}
