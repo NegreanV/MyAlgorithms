@@ -23,8 +23,8 @@ int main()
 	inf >> numeA;
 	inf >> notaMatematicaA;
 	inf >> notaRomanaA;
-	inf >> notaMatematicaB;
 	inf >> numeB;
+	inf >> notaMatematicaB;
 	inf >> notaRomanaB;
 	
 	//formatam numele pentru a le putea ordona alfabetic
