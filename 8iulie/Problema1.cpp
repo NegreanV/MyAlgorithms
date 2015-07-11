@@ -7,6 +7,8 @@
 
 using namespace std;
 
+int max();
+
 int main()
 {
 	ifstream inf ("input.in");
@@ -15,10 +17,6 @@ int main()
 	
 	int notaMatematicaA, notaRomanaA;
 	int notaMatematicaB, notaRomanaB;
-	int lengthA = numeA.size();
-	int lengthB = numeB.size();
-    
-    char numeFinalA[100], numeFinalB[100];
 	
 	inf >> numeA;
 	inf >> notaMatematicaA;
@@ -27,43 +25,60 @@ int main()
 	inf >> notaMatematicaB;
 	inf >> notaRomanaB;
 	
-	//formatam numele pentru a le putea ordona alfabetic
-	for (int i = 0;i <= lengthA;i++)
-    {
-        numeFinalA[i] = numeA[i];
-    }
-        
-    for (int i = 0;i <= lengthB;i++)
-    {
-		numeFinalB[i] = numeB[i];
-	}
-	
-	int medieA = (notaMatematicaA + notaRomanaA) / 2;
-	int medieB = (notaMatematicaB + notaRomanaB) / 2;
-	
-	char cA = numeFinalA[0];
-	char cB = numeFinalB[0];
-	
-	int ccA = static_cast<int>(cA);
-	int ccB = static_cast<int>(cB);
+	double medieA = (notaMatematicaA + notaRomanaA) / 2.0;
+	double medieB = (notaMatematicaB + notaRomanaB) / 2.0;
 	
 	if (medieA > medieB)
 	{
-		cout << "Ionescu\nPopescu";
+		cout << numeA << "\n" << numeB;
 	}
-	else if (medieA < medieB)
+	
+	if (medieA < medieB)
 	{
-		cout << "Popescu\nIonescu";
+		cout << numeB << "\n" << numeA;
 	}
-	else if (medieA == medieB)
+	
+	if (medieA == medieB)
 	{
-		if (ccA < ccB)
-		{
-			cout << "Ionescu\nPopescu";
+		bool firstIsSmaller = false;
+		bool secondIsSmaller = false;
+		int length = max(numeA.size(), numeB.size());
+		for (int i = 0; i < length; i++) {
+			if (numeA[i] < numeB[i]) {
+				firstIsSmaller = true;
+				break;
+			} 
+			if (numeA[i] > numeB[i]) {
+				secondIsSmaller = true;
+				break;
+			}
 		}
-		else if (ccA > ccB)
+		if (firstIsSmaller)
 		{
-			cout << "Popescu\nIonescu";
+			cout << numeA << "\n" << numeB;
 		}
+		
+		if (secondIsSmaller)
+		{
+			cout << numeB << "\n" << numeA;
+		}
+		
+		if(!firstIsSmaller && !secondIsSmaller) {
+			if(numeA.size() < numeB.size()){
+				cout << numeA << "\n" << numeB;
+			} else {
+				cout << numeB << "\n" << numeA;
+			}
+		}
+		
 	}
 }
+
+int max(int a, int b) {
+	if(a >= b) {
+		return a;
+	} else {
+		return b;
+	}
+}
+
