@@ -15,6 +15,7 @@ int main()
 	
 	for (int i = 1; i <= 100; i++)
 	{
+		// frumos :)
 		if ((i + i + 1) % a == 0)
 		{
 			cout << i << " " << i + 1 << endl;
