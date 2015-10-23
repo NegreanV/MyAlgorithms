@@ -5,7 +5,7 @@
 #include <iostream>
 
 using namespace std;
-
+// stas
 int main()
 {
 	int a, b, c, old[100], j = 0, suma(0);
