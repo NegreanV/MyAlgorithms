@@ -8,6 +8,7 @@ using namespace std;
 
 int main()
 {
+	// sa initializezi variabila 'used'
 	int a, used;
 	cin >> a;
 	
