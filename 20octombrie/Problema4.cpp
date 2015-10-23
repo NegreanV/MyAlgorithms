@@ -8,7 +8,7 @@
 #include <iostream>
 
 using namespace std;
-
+// bun
 int main()
 {
 	int n;
