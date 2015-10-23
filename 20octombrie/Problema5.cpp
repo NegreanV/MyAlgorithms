@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+// sa pui te rog o descriere
 int main()
 {
 	int n, sumaDiv, sumaDiviz = 0, keep = 112;
