@@ -16,7 +16,7 @@ using namespace std;
 
 int main()
 {
-    ifstream f("BAC.TXT");
+    ifstream f("input.in");
     
     long x, y, n;
     f >> x;
